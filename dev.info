@@ -1,0 +1,5 @@
+name = Dev
+description = Terry Dev module
+package = AA
+core = 7.x
+php = 5.2
