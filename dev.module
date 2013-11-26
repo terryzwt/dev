@@ -57,6 +57,8 @@ function test_page() {
 
 function dev_ajax_callback($type = 'ajax') {
   if ($type == 'ajax') {
+    $commands[] = ajax_command_replace('#main-menu','kkk');
+    
     $commands[] = ajax_command_replace('#logo', 'Hey ! Some AJAX content !');
     $page = array('#type' => 'ajax', '#commands' => $commands);
     ajax_deliver($page);
